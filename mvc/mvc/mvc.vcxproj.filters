@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\back">
+      <UniqueIdentifier>{915b03f0-b337-48e9-8278-6e3a3d14bcba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{9f80b688-6c30-4b9f-85a2-679ea232a2c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\example">
+      <UniqueIdentifier>{6ce9e506-6d50-48f6-89f5-af83de7dcf36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{41248680-590b-4b38-85c9-1efb4fcce1ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mvc">
+      <UniqueIdentifier>{17f7dc8f-9320-44ea-9be1-bde86b57b9a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{bd6a94e1-3cca-4b04-b64a-ba2f3488d3c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\back\mainBack.cpp">
+      <Filter>Source Files\back</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\main.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\MainControllerSingelton.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mvc\mainMVC.cpp">
+      <Filter>Source Files\mvc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gui\mainGUI.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\example\example.cpp">
+      <Filter>Source Files\example</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\back\mainBack.hpp">
+      <Filter>Source Files\back</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\MainControllerSingelton.hpp">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\llanytypeslib.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\Singleton.hpp">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mvc\mainMVC.hpp">
+      <Filter>Source Files\mvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gui\mainGUI.hpp">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\example\example.hpp">
+      <Filter>Source Files\example</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
