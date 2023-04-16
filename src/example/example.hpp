@@ -10,7 +10,6 @@
 
 namespace thread {
 
-void exampleThread();
 void zzzThread();
 
 } /* namespace thread */

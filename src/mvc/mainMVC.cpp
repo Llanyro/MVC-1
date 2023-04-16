@@ -5,17 +5,25 @@
  *      Author: llanyro
  */
 
-#include "mainMVC.hpp"
-#include "../core/MainControllerSingelton.hpp"
-
-// Call the main controller to execute this main when necesary
-ll_bool_t mvcInit = llcpp::core::MainControllerSingelton::getInstance()->addMainToExec(mainMVC);
+#include "../core/Subsciber.hpp"
 
 #pragma region MultiThreadExample
 #include "../example/example.hpp"
 #pragma endregion
 
-int mainMVC(int argc, char** argv) {
-	thread::exampleThread();
-	return 0;
-}
+namespace mvc {
+
+class MainMVC : public llcpp::core::Subscriber {
+	public:
+		MainMVC() {}
+		~MainMVC() {}
+		virtual int run(int argc, char** argv) const {
+			thread::zzzThread();
+			return 0;
+		}
+};
+
+// Call the main controller to execute this main when necesary
+MainMVC main;
+
+} /* namespace backend */

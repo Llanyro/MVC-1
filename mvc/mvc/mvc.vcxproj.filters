@@ -51,11 +51,11 @@
     <ClCompile Include="..\..\src\example\example.cpp">
       <Filter>Source Files\example</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\core\Subsciber.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\back\mainBack.hpp">
-      <Filter>Source Files\back</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\core\MainControllerSingelton.hpp">
       <Filter>Source Files\core</Filter>
     </ClInclude>
@@ -65,14 +65,11 @@
     <ClInclude Include="..\..\src\utils\Singleton.hpp">
       <Filter>Source Files\utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\mvc\mainMVC.hpp">
-      <Filter>Source Files\mvc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\gui\mainGUI.hpp">
-      <Filter>Source Files\gui</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\example\example.hpp">
       <Filter>Source Files\example</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\Subsciber.hpp">
+      <Filter>Source Files\core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

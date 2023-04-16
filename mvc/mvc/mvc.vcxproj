@@ -142,16 +142,15 @@
     <ClCompile Include="..\..\src\back\mainBack.cpp" />
     <ClCompile Include="..\..\src\core\main.cpp" />
     <ClCompile Include="..\..\src\core\MainControllerSingelton.cpp" />
+    <ClCompile Include="..\..\src\core\Subsciber.cpp" />
     <ClCompile Include="..\..\src\example\example.cpp" />
     <ClCompile Include="..\..\src\gui\mainGUI.cpp" />
     <ClCompile Include="..\..\src\mvc\mainMVC.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\back\mainBack.hpp" />
     <ClInclude Include="..\..\src\core\MainControllerSingelton.hpp" />
+    <ClInclude Include="..\..\src\core\Subsciber.hpp" />
     <ClInclude Include="..\..\src\example\example.hpp" />
-    <ClInclude Include="..\..\src\gui\mainGUI.hpp" />
-    <ClInclude Include="..\..\src\mvc\mainMVC.hpp" />
     <ClInclude Include="..\..\src\utils\llanytypeslib.h" />
     <ClInclude Include="..\..\src\utils\Singleton.hpp" />
   </ItemGroup>
