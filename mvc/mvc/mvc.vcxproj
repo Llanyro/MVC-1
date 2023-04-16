@@ -151,7 +151,6 @@
     <ClInclude Include="..\..\src\core\MainControllerSingelton.hpp" />
     <ClInclude Include="..\..\src\core\Subsciber.hpp" />
     <ClInclude Include="..\..\src\example\example.hpp" />
-    <ClInclude Include="..\..\src\utils\llanytypeslib.h" />
     <ClInclude Include="..\..\src\utils\Singleton.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

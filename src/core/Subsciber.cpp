@@ -11,8 +11,11 @@
 namespace llcpp {
 namespace core {
 
-Subscriber::Subscriber() {
-	MainControllerSingelton::getInstance()->add(this);
+Subscriber::Subscriber(const bool& main) {
+	if(main)
+		MainControllerSingelton::getInstance()->setMainThread(this);
+	else
+		MainControllerSingelton::getInstance()->add(this);
 }
 Subscriber::~Subscriber() {}
 

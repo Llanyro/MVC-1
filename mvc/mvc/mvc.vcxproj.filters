@@ -59,9 +59,6 @@
     <ClInclude Include="..\..\src\core\MainControllerSingelton.hpp">
       <Filter>Source Files\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\utils\llanytypeslib.h">
-      <Filter>Source Files\utils</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\utils\Singleton.hpp">
       <Filter>Source Files\utils</Filter>
     </ClInclude>

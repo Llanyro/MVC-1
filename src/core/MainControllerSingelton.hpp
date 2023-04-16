@@ -28,10 +28,12 @@ class MainControllerSingelton : public llcpp::core::singleton::Singleton<MainCon
 	protected:
 		//std::list<MainFunction>* mainList;
 		std::list<Subscriber*> mainList;
+		Subscriber* main;
 	public:
 		// Return true if added to list
 		// False if already exists in list
-		ll_bool_t add(Subscriber* sub);
+		bool add(Subscriber* sub);
+		bool setMainThread(Subscriber* main);
 		void run(int argc, char** argv) const;
 };
 

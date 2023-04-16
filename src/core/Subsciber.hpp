@@ -13,7 +13,7 @@ namespace core {
 
 class Subscriber {
 	public:
-		Subscriber();
+		Subscriber(const bool& main = false);
 		~Subscriber();
 		virtual int run(int argc, char** argv) const = 0;
 };
