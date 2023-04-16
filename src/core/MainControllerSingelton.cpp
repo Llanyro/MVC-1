@@ -16,6 +16,7 @@ namespace llcpp {
 namespace core {
 
 MainControllerSingelton::MainControllerSingelton() {
+	this->main = nullptr;
 	//this->mainList = new std::list<MainFunction>();
 }
 MainControllerSingelton::~MainControllerSingelton() {
@@ -33,6 +34,14 @@ ll_bool_t MainControllerSingelton::addMainToExec(MainFunction function) {
 		this->mainList.push_back(function);
 	return result;
 }
+ll_bool_t MainControllerSingelton::setMainThread(MainFunction function) {
+	ll_bool_t result = true;
+	if (!this->main)
+		this->main = function;
+	else
+		result = false;
+	return result;
+}
 void MainControllerSingelton::runMains(int argc, char** argv) const {
 	std::vector<std::thread> threads;
 
@@ -41,6 +50,7 @@ void MainControllerSingelton::runMains(int argc, char** argv) const {
 		threads.emplace_back(std::thread(main, argc, argv));
 		//main(argc, argv);
 	}
+	if (this->main) this->main(argc, argv);
 	for (auto& t : threads)
 		t.join();
 }

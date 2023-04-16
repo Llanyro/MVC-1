@@ -9,7 +9,7 @@
 #include "../core/MainControllerSingelton.hpp"
 
 // Call the main controller to execute this main when necesary
-ll_bool_t guiInit = llcpp::core::MainControllerSingelton::getInstance()->addMainToExec(mainGUI);
+ll_bool_t guiInit = llcpp::core::MainControllerSingelton::getInstance()->setMainThread(mainGUI);
 
 #pragma region MultiThreadExample
 #include "../example/example.hpp"
