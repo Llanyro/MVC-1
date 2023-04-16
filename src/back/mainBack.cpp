@@ -16,6 +16,6 @@ ll_bool_t backInit = llcpp::core::MainControllerSingelton::getInstance()->addMai
 #pragma endregion
 
 int mainBack(int argc, char** argv) {
-	thread::exampleThread();
+	thread::zzzThread();
 	return 0;
 }

@@ -16,6 +16,6 @@ ll_bool_t mvcInit = llcpp::core::MainControllerSingelton::getInstance()->addMain
 #pragma endregion
 
 int mainMVC(int argc, char** argv) {
-	thread::exampleThread();
+	thread::zzzThread();
 	return 0;
 }

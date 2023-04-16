@@ -10,17 +10,17 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include <mutex>
 
 namespace thread {
 
-void exampleThread() {
-	//std::thread t(zzzThread);
-	//t.join();
-	zzzThread();
-}
+std::mutex coutMutex;
+
 void zzzThread() {
+	coutMutex.lock();
 	int i = 10;
 	std::cout << "Thread " << std::this_thread::get_id() << " is going to sleep " << i << " seconds" << std::endl;
+	coutMutex.unlock();
 	std::this_thread::sleep_for(std::chrono::seconds(i));
 }
 

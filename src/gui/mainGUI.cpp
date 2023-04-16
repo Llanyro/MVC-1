@@ -16,6 +16,6 @@ ll_bool_t guiInit = llcpp::core::MainControllerSingelton::getInstance()->addMain
 #pragma endregion
 
 int mainGUI(int argc, char** argv) {
-	thread::exampleThread();
+	thread::zzzThread();
 	return 0;
 }
