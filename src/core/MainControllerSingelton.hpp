@@ -37,8 +37,8 @@ class MainControllerSingelton : public llcpp::core::singleton::Singleton< MainCo
 	public:
 		// Return true if added to list
 		// False if already exists in list
-		ll_bool_t addMainToExec(MainFunction function);
-		ll_bool_t setMainThread(MainFunction function);
+		bool addMainToExec(MainFunction function);
+		bool setMainThread(MainFunction function);
 		void runMains(int argc, char** argv) const;
 };
 

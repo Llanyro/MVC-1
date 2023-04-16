@@ -152,7 +152,6 @@
     <ClInclude Include="..\..\src\example\example.hpp" />
     <ClInclude Include="..\..\src\gui\mainGUI.hpp" />
     <ClInclude Include="..\..\src\mvc\mainMVC.hpp" />
-    <ClInclude Include="..\..\src\utils\llanytypeslib.h" />
     <ClInclude Include="..\..\src\utils\Singleton.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

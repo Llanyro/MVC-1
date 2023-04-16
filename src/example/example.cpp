@@ -12,9 +12,9 @@
 #include <chrono>
 #include <mutex>
 
-namespace thread {
-
 std::mutex coutMutex;
+
+namespace thread {
 
 void zzzThread() {
 	coutMutex.lock();

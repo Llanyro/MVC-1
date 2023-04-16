@@ -9,7 +9,7 @@
 #include "../core/MainControllerSingelton.hpp"
 
 // Call the main controller to execute this main when necesary
-ll_bool_t backInit = llcpp::core::MainControllerSingelton::getInstance()->addMainToExec(mainBack);
+bool backInit = llcpp::core::MainControllerSingelton::getInstance()->addMainToExec(mainBack);
 
 #pragma region MultiThreadExample
 #include "../example/example.hpp"

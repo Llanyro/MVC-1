@@ -9,7 +9,7 @@
 #include "../core/MainControllerSingelton.hpp"
 
 // Call the main controller to execute this main when necesary
-ll_bool_t mvcInit = llcpp::core::MainControllerSingelton::getInstance()->addMainToExec(mainMVC);
+bool mvcInit = llcpp::core::MainControllerSingelton::getInstance()->addMainToExec(mainMVC);
 
 #pragma region MultiThreadExample
 #include "../example/example.hpp"

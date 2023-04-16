@@ -7,8 +7,6 @@
 #ifndef LLCPP_CORE_SINGLETON_SINGLETON_HPP_
 #define LLCPP_CORE_SINGLETON_SINGLETON_HPP_
 
-#include "llanytypeslib.h"
-
 namespace llcpp {
 namespace core {
 namespace singleton {
@@ -31,7 +29,6 @@ class Singleton {
 			static T instance;
 			return &instance;
 		}
-		virtual ll_bool_t clear() { return FALSE; };
 };
 
 } /* namespace singleton */

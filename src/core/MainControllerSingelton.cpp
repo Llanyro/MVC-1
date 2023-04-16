@@ -23,8 +23,8 @@ MainControllerSingelton::~MainControllerSingelton() {
 	//if (this->mainList) delete this->mainList;
 	//this->mainList = nullptr;
 }
-ll_bool_t MainControllerSingelton::addMainToExec(MainFunction function) {
-	ll_bool_t result = true;
+bool MainControllerSingelton::addMainToExec(MainFunction function) {
+	bool result = true;
 	std::list<MainFunction>::iterator it = 
 		//std::find(this->mainList->begin(), this->mainList->end(), function);
 		std::find(this->mainList.begin(), this->mainList.end(), function);
@@ -34,8 +34,8 @@ ll_bool_t MainControllerSingelton::addMainToExec(MainFunction function) {
 		this->mainList.push_back(function);
 	return result;
 }
-ll_bool_t MainControllerSingelton::setMainThread(MainFunction function) {
-	ll_bool_t result = true;
+bool MainControllerSingelton::setMainThread(MainFunction function) {
+	bool result = true;
 	if (!this->main)
 		this->main = function;
 	else
